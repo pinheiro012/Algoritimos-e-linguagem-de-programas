@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Projeto04
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n1, num2, num3, soma, area;
+            Console.Write("Base Maior: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("Base Menor: ");
+            num2 = double.Parse(Console.ReadLine());
+            soma = n1 + num2;
+            Console.Write("Altura: ");
+            num3 = double.Parse(Console.ReadLine());
+            Console.Write("Area dp Trapézio: ");
+            area = (soma * num3)/2;
+            Console.WriteLine(area);
+    
+        }
+    }
+}
