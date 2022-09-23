@@ -1,1 +1,38 @@
+internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+            Console.Write("Digite um valor: ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Digite outro valor: ");
+            y = int.Parse(Console.ReadLine());
 
+            if (x > y)
+            {
+                Console.WriteLine("{0} é maior que {1}", x, y);
+            }
+            else
+            {
+                if (x < y)
+                {
+                    Console.WriteLine("{0} é maior que {1}", y, x);
+                }
+                else
+                {
+                    if (x == y)
+                    {
+                        Console.WriteLine("{0} é igual a {1}", x, y);
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} é igual a {1}", y, x);
+                    }
+
+                           
+                }
+                
+            }        
+        }
+    }
+}
