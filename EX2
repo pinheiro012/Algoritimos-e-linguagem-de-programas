@@ -1,1 +1,25 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+        {
+            {
+            double num1, num2, sub, mult, adi;
+				Console.WriteLine("1º número: ");
+            num1 = double.Parse(Console.ReadLine());
+								Console.WriteLine("2º número: ");
+num2 = double.Parse(Console.ReadLine());
+				sub = num1 - num2;
+				Console.WriteLine("subtração");
+            Console.WriteLine(sub);
+				Console.WriteLine("multiplicação");
+				mult = num1 * num2;
+            Console.WriteLine(mult);
+								Console.WriteLine("adição");
 
+				adi = num1 + num2;
+            Console.WriteLine(adi);
+        }
+    }
+}
