@@ -1,1 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+        {
+            {
+            double num1, num2, area;
+				Console.WriteLine("Base");
+            num1 = double.Parse(Console.ReadLine());
+								Console.WriteLine("Altura");
+num2 = double.Parse(Console.ReadLine());
+				Console.WriteLine("Area do triangulo");
 
+				area = (num1 * num2)/2 ;
+            Console.WriteLine(area);
+        }
+    }
+}
