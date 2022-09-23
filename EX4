@@ -1,1 +1,26 @@
+using System;
 
+public class Program
+    {
+        public static void Main()
+        {
+            string nome;
+            double n1, n2, n3, media, p1, p2, p3;
+            Console.Write("Digite seu nome: ");
+            nome = Console.ReadLine();
+            Console.Write("Digite a primeira nota: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite a segunda nota: ");
+            n2 = double.Parse(Console.ReadLine());
+            Console.Write("Digite a terceira nota: ");
+            n3 = double.Parse(Console.ReadLine());
+            p1 = n1 * 2;
+            p2 = n2 * 4;
+            p3 = n3 * 6;
+            media = (p1 + p2 + p3) / 3;
+            Console.WriteLine("{0}, sua média final é: {1}", nome, media);
+
+
+        }
+    }
+}
