@@ -1,1 +1,19 @@
+public class Program
+    {
+        public static void Main()
+        {
+            double x;
+            Console.Write("Digite um número: ");
+           x = double.Parse(Console.ReadLine());
+            if (x >= 200 && x < 301)
+            {
+                Console.WriteLine("{0} está entre o intervalo de 200 e 300.", x);
+            }
+            else
+            {
+                Console.WriteLine("{0} não está entre o intervalo de 200 e 300.", x);
+            }
 
+        }
+    }
+}
