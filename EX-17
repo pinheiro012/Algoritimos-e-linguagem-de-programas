@@ -1,1 +1,28 @@
-
+using System;
+					
+public class Program
+{
+	public static void Main()
+        {
+            {
+            double n1, n2, n3, n4, media;
+            Console.Write("Digite a primeira nota: ");
+            n1 = double.Parse (Console.ReadLine());
+            Console.Write("Digite a segunda nota: ");
+            n2 = double.Parse(Console.ReadLine());
+            Console.Write("Digite a terceira nota: ");
+            n3 = double.Parse(Console.ReadLine());
+            Console.Write("Digite a quarta nota: ");
+            n4 = double.Parse(Console.ReadLine());
+            media = (n1 + n2 + n3 + n4) / 4;
+            if ( media >= 5)
+            {
+                Console.WriteLine("Você foi aprovado! Sua média final é: {0}.",media.ToString("F2"));
+            }
+            else
+            {
+                Console.WriteLine("Você foi reprovado! Sua média final é: {0}.", media.ToString("F2"));
+            }
+}
+}
+}
