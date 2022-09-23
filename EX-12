@@ -1,1 +1,21 @@
-
+using System;
+					
+public class Program
+{
+	public static void Main()
+  {
+  {
+  double x, y, z, media;
+            Console.Write("Digite seu nome:");
+            nome = Console.ReadLine();
+            Console.Write("Digite a primeira nota: ");
+            x = double.Parse(Console.ReadLine());
+            Console.Write("Digite a segunda nota: ");
+            y = double.Parse(Console.ReadLine());
+            Console.Write("Digite a terceira nota: ");
+            z = double.Parse(Console.ReadLine());
+            media = (x + y + z) / 3;
+            Console.WriteLine("{0}, a média de suas notas é: {1}", nome, media);
+}
+}
+}
