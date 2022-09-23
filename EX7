@@ -1,1 +1,22 @@
-
+public class Program
+        {
+	      public static void Main()
+        {
+            double folhas;
+            float  cp1 = 0.50f;
+            float cp2 = 0.30f;
+            Console.Write("Digite o número de folhas: ");
+            folhas = double.Parse(Console.ReadLine());
+            if (folhas <= 200)
+            {
+                folhas = folhas * cp1;
+                Console.WriteLine("O valor a ser pago é de R${0}", folhas.ToString("F2"));
+            }
+            else
+            {
+                folhas = folhas * cp2;
+                Console.WriteLine("O valor a ser pago é de R${0}", folhas.ToString("F2"));
+            }
+        }
+    }
+}
