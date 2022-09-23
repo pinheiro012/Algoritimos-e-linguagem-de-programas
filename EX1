@@ -6,13 +6,12 @@ public class Program
         {
             {
             double num1, num2, area;
-				Console.WriteLine("Base");
+	    Console.WriteLine("Base");
             num1 = double.Parse(Console.ReadLine());
-								Console.WriteLine("Altura");
-num2 = double.Parse(Console.ReadLine());
-				Console.WriteLine("Area do triangulo");
-
-				area = (num1 * num2)/2 ;
+	    Console.WriteLine("Altura")
+	    num2 = double.Parse(Console.ReadLine());
+	    Console.WriteLine("Area do triangulo");
+	    area = (num1 * num2)/2 ;
             Console.WriteLine(area);
         }
     }
