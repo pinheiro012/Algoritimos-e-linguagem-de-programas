@@ -1,1 +1,19 @@
-
+public class Program
+{
+	public static void Main()
+        {
+            {
+            int x;
+            Console.Write("Digite um número: ");
+            x = int.Parse(Console.ReadLine());
+            if (x %2== 0)
+            {
+                Console.WriteLine("{0} é um número par.", x);
+            }
+            else
+            {
+                Console.WriteLine("{0} é um número ímpar.", x);
+            }
+}
+}
+}
