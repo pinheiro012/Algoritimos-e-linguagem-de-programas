@@ -1,1 +1,23 @@
+int [] num = new int[8];          
+            Random aleatorio = new Random();
+            int x=0, y=0, soma;
 
+            for (int i = 1; i < num.Length; i++)
+            {
+
+                num[i] = aleatorio.Next(1,10);
+                Console.WriteLine(aleatorio.Next(num[i]));
+
+                if (num[i] == i)
+                {
+                    x = i;
+                }
+                else
+                {
+                    y = i;
+                }
+                
+                
+            }
+            soma = x + y;
+            Console.WriteLine("A soma de x e y é: " + soma);
