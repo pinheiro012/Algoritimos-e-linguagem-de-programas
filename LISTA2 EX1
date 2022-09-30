@@ -1,1 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] n = new int[10];
+            int soma = 0;
+            double media, div = 0;
+            for (int i = 0; i < 9; i++)
+            {
+                Console.WriteLine("Digite os números: ");
+                n[i] = int.Parse(Console.ReadLine());
+
+                if (n[i]<0)
+                {
+                    Console.WriteLine("Negativo");
+                    soma = n[i] + soma;
+                    div++;
+                }
+                else
+                {
+                    Console.WriteLine("Positivo");
+                }
+
+            }
+            media = soma / div;
+            Console.WriteLine("A média é: " + media);
+
+        }
+    }
+}
