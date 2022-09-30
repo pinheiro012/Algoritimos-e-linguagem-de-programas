@@ -1,1 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] n = new int[150];
+            int votobranco = 0, votonulo = 0, cd1 = 0, cd2 = 0, votost = 150;
+            for (int i = 0; i < 149; i++)
+            {
+                Console.WriteLine("Digite seu voto: ");
+                n[i] = int.Parse(Console.ReadLine());
+
+                if(n[i] == 1)
+                {
+                   cd1++; 
+                }
+                if (n[i] == 2)
+                {
+                    cd2++;
+                }
+                if (n[i] == 3)
+                {
+                    votobranco++;   
+                }
+                if (n[i] == 4)
+                {
+                    votonulo++;
+                }
+
+            }
+            Console.WriteLine("Votos Candidato 1: {0}, Votos candidato 2: {1}", cd1, cd2);
+            Console.WriteLine("Votos Brancos: {0}, Votos nulos: {1}", votobranco,votonulo);
+            Console.WriteLine("Votos lidos: " + votost);
+
+            if (cd1 > cd2)
+            {
+                Console.WriteLine("Candidato 1 vencedor!");
+            }
+            else
+            {
+                Console.WriteLine("Candidato 2 vencedor!");
+            }
+
+
+        }
+    }
+}
