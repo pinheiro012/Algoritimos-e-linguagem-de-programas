@@ -1,1 +1,14 @@
+static void Main(string[] args)
+        {
+            int resultado, n1;
+            Console.WriteLine("Digite a temperatura em Cº: ");
+            n1 = int.Parse(Console.ReadLine());
+            resultado = F(n1);
+            Console.WriteLine( "{0}ºF",resultado);
+        }
+        public static int F(int n1)
+        {
+            return (9 * n1 + 160) / 5;
+        }
 
+}   
